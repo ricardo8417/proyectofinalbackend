@@ -1,0 +1,36 @@
+
+
+
+{{#each cart.products}}
+
+<div class="d-flex justify-content-center align-items-center">
+<div class="table-responsive-sm">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr class="table-active">
+             
+                <th scope="col">Thumbnail</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td><img class="ms-5 mt-5" width="50" src={{{pid.thumbnail}}} alt=""></td>
+                <td><h2 class="ms-5 mt-5">{{{pid.title}}}</h2></td>
+                <td><h3 class="ms-5 mt-5">${{{pid.price}}}</h3></td>
+                <td><h5 class="ms-5 mt-5">{{{quantity}}}</h5></td>
+                <td><button onclick="deleteProduct('{{{this._id}}}')" class="btn btn-danger ms-5 mt-5">🗑 Eliminar</button></td>
+                    
+                    
+                 
+                            </tr>
+                    </tbody>
+    </table>
+</div>
+</div>
+{{/each}}
+
+<script src="/static/js/cart.js"></script>

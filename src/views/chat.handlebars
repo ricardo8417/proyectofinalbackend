@@ -1,0 +1,23 @@
+<div class="contenedor_chat">
+    <h1>Este es el chat 🔥🔥🔥🔥🔥</h1>
+    <div class="contenido_chat f-flex">
+        <div id="logs">
+            {{#each messages}}
+            <div class="message">
+                <span class="user text-light">{{this.user}}:</span>
+                <p class="text-light">{{this.message}}</p>
+
+            </div>
+
+            {{/each}}
+
+        </div>
+        <div class="text_box">
+            <input class="input_box" id="chatbox">
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="socket.io/socket.io.js"></script>
+<script src="/static/js/index.js"></script>

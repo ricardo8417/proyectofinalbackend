@@ -1,0 +1,50 @@
+{{#if user}}
+<h1>bienvenido {{user}}</h1>
+{{/if}}
+
+<h1 class="text-center">Productos</h1>
+
+<br>
+<div class="d-flex flex-wrap ms-4">
+    {{#each docs}}
+    <div class="card card__container" style="width: 18rem;">
+        <img height="300" src={{this.thumbnail}} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">${{this.price}}</p>
+            <p class="card-text">Disponible: {{{this.stock}}}</p>
+            
+
+            <a href="/detail/{{{this._id}}}" class="btn btn-primary">Detalles</a>
+            <button id="addCart" onclick="addCart('{{{this._id}}}')" class="btn btn-primary">Agregar al carrito</button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="ms-5 mb-5">
+    {{#if hasPrevPage}}
+    <a class="ms-2" href={{prevLink}}>anterior</a>
+    {{/if}}
+
+    {{#if hasPrevPage}}
+    <a class="ms-2" href={{prevLink}}>{{prevPage}}</a>
+    {{/if}}
+
+    <a class="ms-2" href={{nextLink}}>{{page}}</a>
+    {{#if hasNextPage}}
+    <a class="ms-2" href={{nextLink}}>{{nextPage}}</a>
+    {{/if}}
+
+    {{#if hasNextPage}}
+    <a class="ms-2" href={{nextLink}}>siguiente</a>
+    {{/if}}
+
+</div>
+
+
+
+
+
+<script src="socket.io/socket.io.js"></script>
+
+<script src="/static/js/cart.js"></script>

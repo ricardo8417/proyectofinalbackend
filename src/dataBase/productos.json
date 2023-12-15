@@ -1,0 +1,110 @@
+[
+	{
+		"id": 1,
+		"title": "Memoria Ram",
+		"descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+		"price": 39550,
+		"thumbnail": "sin imagen",
+		"code": "9542",
+		"stock": 1
+	},
+	{
+		"id": 2,
+		"title": "Notebook",
+		"descripcion": "Notebook Gamer Acer Nitro 5 15.6",
+		"price": "465.999",
+		"thumbnail": "sin imagen",
+		"code": "14320",
+		"stock": 1
+	},
+	{
+		"id": 4,
+		"title": "Gabinete",
+		"descripcion": "Gabinete Kolink Inspire K3 RGB  M-ATX Vidrio Templado",
+		"price": 25700,
+		"thumbnail": "nada",
+		"code": "54",
+		"stock": 10
+	},
+	{
+		"id": 6,
+		"title": "Gabinete",
+		"descripcion": "Gabinete para gamers",
+		"price": 25700,
+		"thumbnail": "sin imagen",
+		"code": "56",
+		"stock": 1
+	},
+	{
+		"id": 7,
+		"title": "Notebook",
+		"descripcion": "Notebook Asus",
+		"price": 34000,
+		"thumbnail": "ninguna",
+		"code": "50",
+		"stock": 20
+	},
+	{
+		"id": 8,
+		"title": "Memoria Ram",
+		"descripcion": "Memoria kingstoon DDR4 16GB 3000MHz",
+		"price": 4000,
+		"thumbnail": "nada",
+		"code": "51",
+		"stock": 10
+	},
+	{
+		"id": 10,
+		"title": "Gabinete",
+		"descripcion": "Gabinete Kolink Inspire K3 RGB  M-ATX Vidrio Templado",
+		"price": 25700,
+		"thumbnail": "no hay imagen",
+		"code": "55",
+		"stock": 20
+	},
+	{
+		"id": 11,
+		"title": "Monitor",
+		"descripcion": "Monitor de 27 pulgadas",
+		"price": 2899,
+		"thumbnail": "Sin Imagen",
+		"code": "60",
+		"stock": 20
+	},
+	{
+		"id": 12,
+		"title": "Mochila",
+		"descripcion": "Maleta escolar",
+		"price": 300,
+		"thumbnail": "Sin Imagen",
+		"code": "77",
+		"stock": 10
+	},
+	{
+		"id": 13,
+		"title": "Bicicleta",
+		"descripcion": "Bicicleta Deportiva",
+		"price": "2500",
+		"thumbnail": "sin imagen",
+		"code": "25",
+		"stock": 20
+	},
+	{
+		"id": 14,
+		"title": "Aire acondicionado",
+		"descripcion": "Clima",
+		"price": 10000,
+		"thumbnail": "ninguna",
+		"code": "89",
+		"stock": 30
+	},
+	{
+		"id": 15,
+		"title": "Monitor",
+		"descripcion": "Monitor de Computadora",
+		"price": 2500,
+		"thumbnail": "ninguna",
+		"code": "96",
+		"stock": 40
+	}
+]

@@ -1,0 +1,29 @@
+<div class="profile-card">
+    
+    <h2 class="profile-name">{{first_name}} {{last_name}}</h2>
+    <p class="profile-email">{{email}}</p>
+    <p class="profile-role">Rol: {{rol}}</p>
+    <div class="profile-actions">
+        {{!-- <a href="/compras">Ver Compras</a> --}}
+        <button id="logoutButton">Cerrar Sesión</button>
+    </div>
+</div>
+
+<script>
+    const logoutButton = document.getElementById('logoutButton');
+    logoutButton.addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/sessions/logout', {
+                method: 'DELETE',
+            });
+            if (response.ok) {
+                window.location.href = '/login';
+            } else {
+                console.error('Error al cerrar sesión');
+            }
+        } catch (error) {
+            console.error('Error al comunicarse con el servidor:', error);
+        }
+    });
+</script>
+

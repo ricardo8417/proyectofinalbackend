@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>{{title}}</h3>
+                </div>
+                <div class="card-body">
+                    <img src="{{thumbnail}}" alt="{{title}}" class="img-fluid">
+                    <p class="mt-3">Precio: ${{price}}</p>
+                    <p>Stock: {{stock}}</p>
+                    <p>Descripción: {{descripcion}}</p>
+                    <p>Id del Producto: {{{_id}}}</p>
+                    <a onclick="addCart('{{{_id}}}')" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/cart.js"></script>

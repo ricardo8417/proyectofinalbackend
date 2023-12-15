@@ -1,0 +1,51 @@
+<ul>
+    <li>
+        <a href="/products">Products List</a>
+    </li>
+    <li>
+        <a href="/products-realtime">Realtime</a>
+    </li>
+    <li>
+        <a href="/chat">Chat</a>
+    </li>
+</ul>
+<hr>
+<form action="/form-products" method="post">
+
+<div class="form-group  d-flex align-items-center flex-column">
+
+    <div class="col-md-4 mb-3">
+        <label for="valtitle">Title:</label>
+<input type="text" name="title" class="form-control " id="valtitle" placeholder="Title" required>
+</div>
+
+<div class="col-md-4 mb-3">
+<label for="valdescripcion">Descripcion:</label>
+<input type="text" name="descripcion" class="form-control " id="valdescripcion" placeholder="Descripción" required>
+</div>
+
+<div class="col-md-4 mb-3">
+    <label for="valPrice">Price:</label>
+    
+<input type="number" name="price" class="form-control " id="valPrice" placeholder="Price" required>
+</div>
+
+<div class="col-md-4 mb-3">
+<label for="valThumbnail">Thumbnail:</label>
+<input type="text" name="thumbnail" class="form-control" id="valThumbnail" placeholder="Thumbnail">
+</div>
+
+<div class="col-md-4 mb-3">
+<label for="valCode">Code:</label>
+<input type="text" name="code" id="valCode" class="form-control " placeholder="Code" required>
+</div>
+
+<div class="col-md-4 mb-3">
+<label for="valStock">Stock:</label>
+<input type="number" name="stock" id="valStock" class="form-control " placeholder="Stock" required>
+</div>
+
+
+<button type="submit" class="btn btn-primary">Enviar</button>
+</div>
+</form>
